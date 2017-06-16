@@ -2,13 +2,17 @@
 
     $(document).ready(function ($) {
 
-        trackLink('.arpw-title', 'playagain');
-        trackLink('.jp-relatedposts-post-a', 'related');
-        trackLink("a[href*='/out/']", 'out');
-        trackLink("#comments a[href*='/marc.tv/']", 'commentlink');
-        trackLink(".menu-hauptnavigation-container a",'menu');
-        trackLink(".site-branding a",'logo-home');
-        trackLink("#respond #submit",'comment');
+        if (window.__gaTracker && __gaTracker.create) {
+
+            trackLink('.arpw-title', 'playagain');
+            trackLink('.jp-relatedposts-post-a', 'related');
+            trackLink("a[href*='/out/']", 'out');
+            trackLink("#comments a[href*='/marc.tv/']", 'commentlink');
+            trackLink(".menu-hauptnavigation-container a",'menu');
+            trackLink(".site-branding a",'logo-home');
+            trackLink("#respond #submit",'comment');
+
+        }
 
         function trackLink(selector, label) {
 
@@ -24,7 +28,7 @@
                     title = $(this).text();
                 }
 
-                if ( title == null ) {
+                if ( title == '' ) {
                     title = 'not available';
                 }
 
