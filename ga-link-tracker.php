@@ -3,9 +3,9 @@
 /*
   Plugin Name: Link Tracker for Monster Insights
   Plugin URI: http://marc.tv
-  GitHub Plugin URI: mtoensing/wp-ga-linktracker
+  GitHub Plugin URI: mtoensing/google-analytics-linktracker
   Description: Track internal links as events.
-  Version: 1.5
+  Version: 1.6
   Author: Marc Tönsing
   Author URI: http://marc.tv
   License: Creative Commons Attribution-ShareAlike
