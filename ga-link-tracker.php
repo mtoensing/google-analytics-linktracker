@@ -1,11 +1,11 @@
 <?php
 
 /*
-  Plugin Name: Link Tracker for Monster Insights
+  Plugin Name: Link Tracker for Monster Insights & Piwik
   Plugin URI: http://marc.tv
   GitHub Plugin URI: mtoensing/google-analytics-linktracker
   Description: Track internal links as events.
-  Version: 1.7
+  Version: 1.8
   Author: Marc Tönsing
   Author URI: http://marc.tv
   License: Creative Commons Attribution-ShareAlike
@@ -19,7 +19,7 @@
 
 function ga_link_tracker_load_scripts() {
 
-	$version = '1.7';
+	$version = '1.8';
 
 	wp_enqueue_script(
 		"linktracker-googleanalytics", WP_PLUGIN_URL . "/google-analytics-linktracker/jquery.linktracker.js", array( "jquery" ), $version, true );
