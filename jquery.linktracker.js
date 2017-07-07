@@ -2,39 +2,52 @@
 
     $(document).ready(function ($) {
 
-        if  ( (window.__gaTracker && __gaTracker.create)  || ('undefined' !== typeof _paq) ) {
-
+        if ((window.__gaTracker && __gaTracker.create) || ('undefined' !== typeof _paq)) {
             trackLink('.arpw-title', 'playagain');
             trackLink('.jp-relatedposts-post-a', 'related');
             trackLink("a[href*='/out/']", 'out');
-            trackLink("#comments a[href*='/marc.tv/']", 'commentlink');
-            trackLink(".menu-hauptnavigation-container a",'menu');
-            trackLink(".site-branding a",'logo-home');
-            trackLink("#respond #submit",'comment');
+            trackLink(".comment-content a[href*='/marc.tv/']", 'commentlink');
+            trackLink(".menu-hauptnavigation-container a", 'menu');
+            trackLink(".site-branding a", 'logo-home');
+            trackLink("#respond #submit", 'comment');
         }
 
         function trackLink(selector, category) {
 
             $(selector).each(function () {
 
-                var label = $(this).attr('title');
-                var action = "click";
+                var action = 'click';
+                var label = '';
 
-                if ( label == null ) {
-                    label = $(this).attr('rel');
-                }
-
-                if ( label == null ) {
-                    label = $(this).text();
-                }
-
-                if ( label == '' ) {
-                    label = 'not available';
+                switch (category) {
+                    case 'out':
+                        label = $(this).text();
+                        break;
+                    case 'logo-home':
+                        label = "logo-home";
+                        break;
+                    case 'comment':
+                        label = "submit";
+                        break;
+                    case 'menu':
+                        label = $(this).text();
+                        break;
+                    case 'commentlink':
+                        label = $(this).text();
+                        break;
+                    case 'related':
+                        label = $(this).attr("title");
+                        break;
+                    default:
+                        label = $(this).text();
+                        if (label == '') {
+                            label = 'not available';
+                        }
                 }
 
                 label = label.replace('"', '');
 
-                $(this).click(function() {
+                $(this).click(function () {
 
                     /* Piwik */
                     if ('undefined' !== typeof _paq) {
