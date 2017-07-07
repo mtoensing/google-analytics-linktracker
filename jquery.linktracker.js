@@ -10,6 +10,9 @@
             trackLink(".menu-hauptnavigation-container a", 'menu');
             trackLink(".site-branding a", 'logo-home');
             trackLink("#respond #submit", 'comment');
+            trackLink("a.cld-like-dislike-trigger", 'likedislike');
+            trackLink("a.socialbutton", 'socialbutton');
+            trackLink(".tags-links a", 'tags');
         }
 
         function trackLink(selector, category) {
@@ -22,6 +25,15 @@
                 switch (category) {
                     case 'out':
                         label = $(this).text();
+                        break;
+                    case 'tags':
+                        label = $(this).text();
+                        break;
+                    case 'socialbutton':
+                        label = $(this).text();
+                        break;
+                    case 'likedislike':
+                        label = $(this).data('trigger-type');
                         break;
                     case 'logo-home':
                         label = "logo-home";
