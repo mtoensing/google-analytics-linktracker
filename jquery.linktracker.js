@@ -13,6 +13,10 @@
             trackLink("a.cld-like-dislike-trigger", 'likedislike');
             trackLink("a.socialbutton", 'socialbutton');
             trackLink(".tags-links a", 'tags');
+            trackLink(".older-posts a", 'posts_older');
+            trackLink(".next.page-numbers", 'posts_next');
+            trackLink(".next.page-numbers", 'posts_next');
+            trackLink(".lastcommented a", 'posts_next');
         }
 
         function trackLink(selector, category) {
