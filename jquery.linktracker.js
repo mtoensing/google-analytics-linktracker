@@ -18,6 +18,7 @@
             trackLink(".prev.page-numbers", 'posts-prev');
             trackLink(".lastcommented a", 'last-commented');
             trackLink(".gtc-link", 'most-popular');
+            trackLink("a.post-category", 'post-category');
         }
 
         function trackLink(selector, category) {
