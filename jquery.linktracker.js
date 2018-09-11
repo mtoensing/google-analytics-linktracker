@@ -58,7 +58,7 @@
                         break;
                     default:
                         label = $(this).text();
-                        if (label == '') {
+                        if (label === '') {
                             label = 'not available';
                         }
                 }
@@ -99,7 +99,7 @@
 
             });
 
-        };
+        }
 
     });
 
