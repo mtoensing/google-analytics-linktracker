@@ -35,6 +35,7 @@
             break;
           case 'out':
             label = $(this).attr('href');
+            $(this).attr('target','_blank');
             break;
           case 'tags':
             label = $(this).text();
