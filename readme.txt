@@ -3,7 +3,7 @@ Contributors: MarcDK
 Tags: marctv, verification, notice
 Requires at least: 3.0
 Tested up to: 4.8
-Stable tag: 3.2
+Stable tag: 3.3
 GitHub Plugin URI: mtoensing/google-analytics-linktracker
 
 == Description ==

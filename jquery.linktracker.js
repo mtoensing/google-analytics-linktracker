@@ -31,6 +31,9 @@
         var label = '';
 
         switch (category) {
+          case 'youtube-channel':
+            label = window.location.href;
+            break;
           case 'video-click':
             label = $(this).find('.titletext').text();
             break;
@@ -65,7 +68,7 @@
           default:
             label = $(this).text();
             if (label === '') {
-              label = 'not available';
+              label = 'na';
             }
         }
 
