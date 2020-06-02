@@ -20,6 +20,7 @@
       trackLink("a.post-category", 'post-category');
       trackLink("a.preview-lazyload", 'video-click');
       trackLink(".is-type-wp-embed a", 'wp-embed');
+      trackLink("a.ytchannelteaser", 'youtube-channel');
     }
 
     function trackLink(selector, category) {
