@@ -3,7 +3,8 @@
   $(window).bind("load", function() {
     if ((window.__gaTracker && __gaTracker.create) || ('undefined' !== typeof _paq)) {
       trackLink('.shortscore-widget a', 'playagain');
-      trackLink('.jp-relatedposts-post-a', 'related');
+      trackLink('.yarpp-related .teaserbox-post-a', 'related');
+      trackLink('.recentpostsbox .teaserbox-post-a', 'recentpostsbox');
       trackLink("a[href*='/out/']", 'out');
       trackLink(".comment-content a[href*='/marc.tv/']", 'commentlink');
       trackLink(".menu-hauptnavigation-container a", 'menu');
