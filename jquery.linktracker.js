@@ -4,7 +4,7 @@
     if ((window.__gaTracker && __gaTracker.create) || ('undefined' !== typeof _paq)) {
       trackLink('.shortscore-widget a', 'playagain');
       trackLink('.yarpp-related .teaserbox-post-a', 'related');
-      trackLink('.recentpostsbox .teaserbox-post-a', 'recentpostsbox');
+      trackLink('.recentpostsbox .teaserbox-post-a', 'recentposts');
       trackLink("a[href*='/out/']", 'out');
       trackLink(".comment-content a[href*='/marc.tv/']", 'commentlink');
       trackLink(".menu-hauptnavigation-container a", 'menu');
@@ -66,6 +66,9 @@
           case 'related':
             label = $(this).attr("title");
             break;
+          case 'recentposts':
+              label = $(this).attr("title");
+              break;
           default:
             label = $(this).text();
             if (label === '') {
