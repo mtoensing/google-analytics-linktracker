@@ -23,6 +23,8 @@
       trackLink(".is-type-wp-embed a", 'wp-embed');
       trackLink("a.ytchannelteaser", 'youtube-channel');
       trackLink("#cookie-notice button", 'cookie-accepted');
+      trackLink(".simpletoc a", 'simpletoc');
+
     }
 
     function trackLink(selector, category) {
@@ -35,6 +37,9 @@
         switch (category) {
           case 'youtube-channel':
             label = window.location.href;
+            break;
+          case 'simpletoc':
+            label = $(this).text();
             break;
           case 'video-click':
             label = $(this).find('.titletext').text();

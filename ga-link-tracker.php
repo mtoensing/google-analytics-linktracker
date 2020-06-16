@@ -5,7 +5,7 @@
   Plugin URI: https://marc.tv
   GitHub Plugin URI: mtoensing/google-analytics-linktracker
   Description: Track internal links as events.
-  Version: 3.6
+  Version: 3.7
   Author: Marc Tönsing
   Author URI: https://marc.tv
   License: Creative Commons Attribution-ShareAlike
@@ -19,7 +19,7 @@
 
 function ga_link_tracker_load_scripts() {
 
-	$version = '3.5';
+	$version = '3.7';
 
 	wp_enqueue_script(
 		"linktracker-googleanalytics", WP_PLUGIN_URL . "/google-analytics-linktracker/jquery.linktracker.js", array( "jquery" ), $version, true );
