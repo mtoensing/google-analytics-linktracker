@@ -5,7 +5,7 @@
   Plugin URI: https://marc.tv
   GitHub Plugin URI: mtoensing/google-analytics-linktracker
   Description: Track internal links as events.
-  Version: 3.5
+  Version: 3.6
   Author: Marc Tönsing
   Author URI: https://marc.tv
   License: Creative Commons Attribution-ShareAlike

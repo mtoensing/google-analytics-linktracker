@@ -22,6 +22,7 @@
       trackLink("a.preview-lazyload", 'video-click');
       trackLink(".is-type-wp-embed a", 'wp-embed');
       trackLink("a.ytchannelteaser", 'youtube-channel');
+      trackLink("#cookie-notice button", 'cookie-accepted');
     }
 
     function trackLink(selector, category) {
