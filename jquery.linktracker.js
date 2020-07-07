@@ -24,7 +24,7 @@
       trackLink("a.ytchannelteaser", 'youtube-channel');
       trackLink("#cookie-notice button", 'cookie-accepted');
       trackLink(".simpletoc a", 'simpletoc');
-
+      trackLink(".mailpoet_submit",'mailpoet');
     }
 
     function trackLink(selector, category) {
