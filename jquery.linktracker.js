@@ -25,6 +25,7 @@
       trackLink("#cookie-notice button", 'cookie-accepted');
       trackLink(".simpletoc a", 'simpletoc');
       trackLink(".mailpoet_submit",'mailpoet');
+      trackLink("#mailpoet_subscribe_on_comment",'mailpoet-comment');
     }
 
     function trackLink(selector, category) {
